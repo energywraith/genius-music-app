@@ -18,4 +18,8 @@ export const OverviewParagraph = styled.p`
     margin: 0;
     margin-top: 0.5em;
   }
+
+  @media(max-width: 1000px) {
+    font-size: 1em;
+  }
 `

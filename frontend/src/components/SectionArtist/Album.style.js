@@ -41,8 +41,13 @@ export const TracksList = styled.ul`
   gap: 0.5em;
 
   & > span > a {
+    display: block;
     font-size: 0.8em;
     color: white;
+
+    @media(max-width: 1000px) {
+      padding: 1em;
+    }
   }
 `
 
@@ -51,7 +56,12 @@ export const Track = styled.li`
   cursor: pointer;
   
   & > a {
+    display: block;
     color: #b3b3b3;
+
+    @media(max-width: 1000px) {
+      padding: 1em;
+    }
   }
 
   &:hover > a {

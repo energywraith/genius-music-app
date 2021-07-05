@@ -48,6 +48,7 @@ export const DescriptionStyled = styled(Description)`
 
 export const Details = styled.ul`
   display: flex;
+  justify-self: center;
   column-gap: 0.5em;
 
   & > li {

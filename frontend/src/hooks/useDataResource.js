@@ -37,6 +37,7 @@ const useDataResource = () => {
   // Everytime location changes tries to fetch the data
   useEffect(() => {
     const handleFetchData = async () => {
+      setData(null)
       const [, id, path] = location.pathname.split('/')
 
       try {

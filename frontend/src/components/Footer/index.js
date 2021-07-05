@@ -11,6 +11,8 @@ const Footer = () => {
 }
 
 const FooterContainer = styled.footer`
+  margin-top: 5em;
+
   & > a {
     display: flex;
     justify-content: center;
@@ -24,8 +26,8 @@ const FooterContainer = styled.footer`
     }
   }
 
-  @media(min-width: 1000px) {
-    margin-top: 5em;
+  @media(max-width: 1000px) {
+    margin-top: 3em;
   }
 `
 

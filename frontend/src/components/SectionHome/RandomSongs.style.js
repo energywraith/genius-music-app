@@ -20,12 +20,13 @@ export const RandomSongsList = styled.ul`
 
   & > button {
     width: fit-content;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     padding: 0;
     border: 0;
     background: transparent;
     cursor: pointer;
     color: lightblue;
+    font-size: 1.3em;
 
     &:hover {
       color: #72bcd4;
