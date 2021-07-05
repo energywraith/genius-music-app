@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { RandomSongsList } from "./RandomSongs.style"
 
-const RandomSongs = ({ randomSongs }) => {
+const RandomSongs = ({ randomSongs, fetchRandomSongs }) => {
   return (
     <RandomSongsList>
       {randomSongs.map(song =>
@@ -11,6 +11,10 @@ const RandomSongs = ({ randomSongs }) => {
           </Link>
         </li>
       )}
+
+      <button onClick={() => fetchRandomSongs(2)}>
+        Refresh random songs
+      </button>
     </RandomSongsList>
   )
 }

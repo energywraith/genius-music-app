@@ -21,15 +21,17 @@ const useDataResource = () => {
     }
   }
 
+  const fetchRandomSongs = async (amount) => {
+    setRandomSongs(null)
+    
+    try {
+      setRandomSongs(await getRandomSongs(amount))
+    } catch (error) {}
+  }
+
   // On first render fetch 2 random songs to display on home page
   useEffect(() => {
-    const handleFetchData = async () => {
-      try {
-        setRandomSongs(await getRandomSongs(2))
-      } catch (error) {}
-    }
-    
-    handleFetchData()
+    fetchRandomSongs(2)
   }, [])
   
   // Everytime location changes tries to fetch the data
@@ -48,7 +50,7 @@ const useDataResource = () => {
   }, [location])
 
   return [
-    data, randomSongs
+    data, randomSongs, fetchRandomSongs
   ]
 }
 

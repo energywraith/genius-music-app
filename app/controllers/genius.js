@@ -1,7 +1,7 @@
 const geniusRouter = require('express').Router()
 const axios = require("axios")
-const extractLyrics = require('./utils/extractLyrics')
-const getRandomInt = require('./utils/getRandomInt')
+const extractLyrics = require('../utils/extractLyrics')
+const getRandomInt = require('../utils/getRandomInt')
 
 // GET search result from genius API
 geniusRouter.get('/search/:name', async (request, response) => {
@@ -112,7 +112,7 @@ geniusRouter.get('/random/:amount', async (request, response) => {
       const song = await axios.get(`${url}/${id}`)
       songs.push(song.data.response.song)
     } catch (error) {
-      console.log(error)
+      // console.log(error)
     }
   }
 

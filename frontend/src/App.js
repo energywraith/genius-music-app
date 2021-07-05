@@ -15,7 +15,7 @@ import { AppContainer } from './App.style'
 import './App.css'
 
 const App = () => {
-  const [ data, randomSongs ] = useDataResource()
+  const [ data, randomSongs, fetchRandomSongs ] = useDataResource()
 
   return (
     <AppContainer>
@@ -40,7 +40,7 @@ const App = () => {
           </NotFound>
         </Route>
         <Route path='/'>
-          <SectionHome randomSongs={randomSongs} />
+          <SectionHome randomSongs={randomSongs} fetchRandomSongs={fetchRandomSongs} />
         </Route>
       </Switch>
 

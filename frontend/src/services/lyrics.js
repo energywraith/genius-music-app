@@ -1,4 +1,5 @@
 import axios from 'axios'
+// const baseUrl = '/api'
 const baseUrl = '/api'
 
 export const search = async name => {

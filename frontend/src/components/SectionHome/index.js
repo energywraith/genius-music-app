@@ -3,7 +3,7 @@ import Loader from '../Loader'
 import RandomSongs from './RandomSongs'
 import { Main, OverviewParagraph } from './index.style'
 
-const SectionHome = ({ randomSongs }) => {
+const SectionHome = ({ randomSongs, fetchRandomSongs }) => {
   return (
     <Main>
       <Helmet>
@@ -21,7 +21,7 @@ const SectionHome = ({ randomSongs }) => {
 
       <h1> Random songs </h1>
       {randomSongs
-        ? <RandomSongs randomSongs={randomSongs} />
+        ? <RandomSongs randomSongs={randomSongs} fetchRandomSongs={fetchRandomSongs} />
         : <Loader />
       }
     </Main>
