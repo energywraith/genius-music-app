@@ -1,0 +1,17 @@
+html, body {
+  font-family: 'Roboto';
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('./fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: fallback;
+}
