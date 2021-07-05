@@ -10,6 +10,7 @@ export const OverviewParagraph = styled.p`
   font-size: 1.3em;
   max-width: 60ch;
   width: fit-content;
+  width: 100%;
   margin: 0;
   row-gap: 1em;
 

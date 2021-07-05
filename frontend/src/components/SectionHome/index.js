@@ -11,11 +11,19 @@ const SectionHome = ({ randomSongs, fetchRandomSongs }) => {
       </Helmet>
 
       <h1> A bit about the page </h1>
-      <OverviewParagraph>
+      {/* <OverviewParagraph>
         Have you ever had lyrics of a song you cannot remind of stuck in your head?
-        This page is here to end your suffering. 
+        This page is here to end your suffering.
+        Besides songs, you can find here your favourite albums or artists.
+      </OverviewParagraph> */}
+      {/* <OverviewParagraph>
+        Besides songs, you can find here your favourite albums or artists.
+      </OverviewParagraph> */}
+
+      <OverviewParagraph>
+        Have you ever had lyrics of a song you cannot remind of stuck in your head? This page is here to end your suffering.
         <p>
-          Besides songs, you can find here your favourite albums or artists.
+          Besides songs, you can find here your favourite albums or artists.
         </p>
       </OverviewParagraph>
 
