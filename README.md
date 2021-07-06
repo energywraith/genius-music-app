@@ -12,7 +12,6 @@ First load may take a while, because the page goes idle when there is no traffic
 
 ## Technologies used:
 * React
-* React Redux
 * Styled Components
 * Express
 * Axios
