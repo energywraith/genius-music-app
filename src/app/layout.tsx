@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${passionOne.variable} bg-primary-900 font-poppins`}
+        className={`${poppins.variable} ${passionOne.variable} bg-primary-900 text-secondary-900 font-poppins`}
       >
         {children}
       </body>
